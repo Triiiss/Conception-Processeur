@@ -18,7 +18,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="EQUAL8BIT"/>
+  <main name="Equal_8Bit"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -124,7 +124,7 @@
       <a name="select" val="3"/>
       <a name="width" val="8"/>
     </comp>
-    <comp loc="(400,280)" name="BancRegistre"/>
+    <comp loc="(400,280)" name="BancReg"/>
     <comp loc="(950,290)" name="ALU"/>
     <wire from="(150,300)" to="(180,300)"/>
     <wire from="(160,180)" to="(160,280)"/>
@@ -176,9 +176,9 @@
     <wire from="(950,290)" to="(1090,290)"/>
     <wire from="(950,310)" to="(1020,310)"/>
   </circuit>
-  <circuit name="BancRegistre">
+  <circuit name="BancReg">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="BancRegistre"/>
+    <a name="circuit" val="BancReg"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(1010,150)" name="Pin">
@@ -286,14 +286,14 @@
     <comp lib="2" loc="(430,570)" name="Decoder">
       <a name="select" val="3"/>
     </comp>
-    <comp loc="(810,150)" name="Registre"/>
-    <comp loc="(810,250)" name="Registre"/>
-    <comp loc="(810,350)" name="Registre"/>
-    <comp loc="(810,450)" name="Registre"/>
-    <comp loc="(810,550)" name="Registre"/>
-    <comp loc="(810,650)" name="Registre"/>
-    <comp loc="(810,750)" name="Registre"/>
-    <comp loc="(810,850)" name="REG1BIT"/>
+    <comp loc="(810,150)" name="Reg_8Bit"/>
+    <comp loc="(810,250)" name="Reg_8Bit"/>
+    <comp loc="(810,350)" name="Reg_8Bit"/>
+    <comp loc="(810,450)" name="Reg_8Bit"/>
+    <comp loc="(810,550)" name="Reg_8Bit"/>
+    <comp loc="(810,650)" name="Reg_8Bit"/>
+    <comp loc="(810,750)" name="Reg_8Bit"/>
+    <comp loc="(810,850)" name="Reg_1Bit"/>
     <wire from="(420,570)" to="(420,690)"/>
     <wire from="(450,490)" to="(500,490)"/>
     <wire from="(450,500)" to="(510,500)"/>
@@ -367,9 +367,9 @@
     <wire from="(830,860)" to="(830,870)"/>
     <wire from="(850,840)" to="(1010,840)"/>
   </circuit>
-  <circuit name="Registre">
+  <circuit name="Reg_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Registre"/>
+    <a name="circuit" val="Reg_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(390,810)" name="Pin">
@@ -494,9 +494,9 @@
     <wire from="(830,190)" to="(830,480)"/>
     <wire from="(830,550)" to="(830,800)"/>
   </circuit>
-  <circuit name="REG1BIT">
+  <circuit name="Reg_1Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="REG1BIT"/>
+    <a name="circuit" val="Reg_1Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(180,190)" name="Pin">
@@ -671,9 +671,9 @@
       <a name="select" val="2"/>
       <a name="width" val="8"/>
     </comp>
-    <comp loc="(650,230)" name="ET"/>
-    <comp loc="(650,360)" name="OU"/>
-    <comp loc="(650,490)" name="XOU"/>
+    <comp loc="(650,230)" name="And_8Bit"/>
+    <comp loc="(650,360)" name="Or_8Bit"/>
+    <comp loc="(650,490)" name="Xor_8Bit"/>
     <wire from="(150,230)" to="(150,360)"/>
     <wire from="(150,230)" to="(430,230)"/>
     <wire from="(150,360)" to="(150,490)"/>
@@ -745,10 +745,10 @@
     <comp lib="2" loc="(880,350)" name="Multiplexer">
       <a name="select" val="2"/>
     </comp>
-    <comp loc="(650,110)" name="EQUAL8BIT"/>
-    <comp loc="(650,230)" name="DIFF8BIT"/>
-    <comp loc="(650,360)" name="INF8BIT"/>
-    <comp loc="(650,490)" name="SUP8BIT"/>
+    <comp loc="(650,110)" name="Equal_8Bit"/>
+    <comp loc="(650,230)" name="Diff_8Bit"/>
+    <comp loc="(650,360)" name="Inf_8Bit"/>
+    <comp loc="(650,490)" name="Sup_8Bit"/>
     <wire from="(1010,340)" to="(1070,340)"/>
     <wire from="(150,110)" to="(150,230)"/>
     <wire from="(150,110)" to="(430,110)"/>
@@ -826,17 +826,17 @@
     <comp lib="2" loc="(830,390)" name="Multiplexer">
       <a name="width" val="8"/>
     </comp>
-    <comp loc="(650,360)" name="ADD"/>
-    <comp loc="(650,490)" name="SUB"/>
-    <wire from="(150,360)" to="(150,510)"/>
+    <comp loc="(650,360)" name="Add_8Bit"/>
+    <comp loc="(650,490)" name="Sub8Bit"/>
+    <wire from="(150,360)" to="(150,490)"/>
     <wire from="(150,360)" to="(430,360)"/>
-    <wire from="(150,510)" to="(150,570)"/>
-    <wire from="(150,510)" to="(430,510)"/>
+    <wire from="(150,490)" to="(150,570)"/>
+    <wire from="(150,490)" to="(430,490)"/>
     <wire from="(160,620)" to="(210,620)"/>
-    <wire from="(210,380)" to="(210,490)"/>
+    <wire from="(210,380)" to="(210,510)"/>
     <wire from="(210,380)" to="(430,380)"/>
-    <wire from="(210,490)" to="(210,620)"/>
-    <wire from="(210,490)" to="(430,490)"/>
+    <wire from="(210,510)" to="(210,620)"/>
+    <wire from="(210,510)" to="(430,510)"/>
     <wire from="(650,360)" to="(750,360)"/>
     <wire from="(650,380)" to="(680,380)"/>
     <wire from="(650,490)" to="(750,490)"/>
@@ -881,10 +881,10 @@
       <a name="select" val="2"/>
       <a name="width" val="8"/>
     </comp>
-    <comp loc="(650,280)" name="LSL"/>
-    <comp loc="(650,340)" name="LSR"/>
-    <comp loc="(650,400)" name="ASR"/>
-    <comp loc="(650,470)" name="R_OL"/>
+    <comp loc="(650,280)" name="Lsl_8Bit"/>
+    <comp loc="(650,340)" name="Lsr_8Bit"/>
+    <comp loc="(650,400)" name="Asr_8Bit"/>
+    <comp loc="(650,470)" name="Rol_8Bit"/>
     <wire from="(200,570)" to="(350,570)"/>
     <wire from="(350,280)" to="(350,340)"/>
     <wire from="(350,280)" to="(430,280)"/>
@@ -907,9 +907,9 @@
     <wire from="(860,370)" to="(860,600)"/>
     <wire from="(880,350)" to="(1060,350)"/>
   </circuit>
-  <circuit name="EQUAL">
+  <circuit name="Equal_1Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="EQUAL"/>
+    <a name="circuit" val="Equal_1Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(440,120)" name="Pin">
@@ -952,9 +952,9 @@
     <wire from="(90,70)" to="(200,70)"/>
     <wire from="(90,70)" to="(90,180)"/>
   </circuit>
-  <circuit name="DIFF">
+  <circuit name="Diff_1Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="DIFF"/>
+    <a name="circuit" val="Diff_1Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(440,120)" name="Pin">
@@ -999,9 +999,9 @@
     <wire from="(90,70)" to="(200,70)"/>
     <wire from="(90,70)" to="(90,180)"/>
   </circuit>
-  <circuit name="INF">
+  <circuit name="Inf1Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="INF"/>
+    <a name="circuit" val="Inf1Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(330,70)" name="Pin">
@@ -1031,9 +1031,9 @@
     <wire from="(90,50)" to="(150,50)"/>
     <wire from="(90,90)" to="(220,90)"/>
   </circuit>
-  <circuit name="INF_FULL">
+  <circuit name="InfFull_1Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="INF_FULL"/>
+    <a name="circuit" val="InfFull_1Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(600,110)" name="Pin">
@@ -1092,9 +1092,9 @@
     <wire from="(90,180)" to="(100,180)"/>
     <wire from="(90,50)" to="(210,50)"/>
   </circuit>
-  <circuit name="SUP">
+  <circuit name="Sup_1Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="SUP"/>
+    <a name="circuit" val="Sup_1Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(230,150)" name="Pin">
@@ -1122,9 +1122,9 @@
     <wire from="(370,180)" to="(410,180)"/>
     <wire from="(460,200)" to="(610,200)"/>
   </circuit>
-  <circuit name="SUP_FULL">
+  <circuit name="SupFull_1Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="SUP_FULL"/>
+    <a name="circuit" val="SupFull_1Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(230,160)" name="Pin">
@@ -1183,9 +1183,9 @@
     <wire from="(550,230)" to="(570,230)"/>
     <wire from="(600,220)" to="(740,220)"/>
   </circuit>
-  <circuit name="EQUAL8BIT">
+  <circuit name="Equal_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="EQUAL8BIT"/>
+    <a name="circuit" val="Equal_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(1130,290)" name="Pin">
@@ -1217,14 +1217,14 @@
     <comp lib="1" loc="(1000,290)" name="AND Gate">
       <a name="inputs" val="8"/>
     </comp>
-    <comp loc="(800,110)" name="EQUAL"/>
-    <comp loc="(800,180)" name="EQUAL"/>
-    <comp loc="(800,250)" name="EQUAL"/>
-    <comp loc="(800,320)" name="EQUAL"/>
-    <comp loc="(800,390)" name="EQUAL"/>
-    <comp loc="(800,40)" name="EQUAL"/>
-    <comp loc="(800,460)" name="EQUAL"/>
-    <comp loc="(800,530)" name="EQUAL"/>
+    <comp loc="(800,110)" name="Equal_1Bit"/>
+    <comp loc="(800,180)" name="Equal_1Bit"/>
+    <comp loc="(800,250)" name="Equal_1Bit"/>
+    <comp loc="(800,320)" name="Equal_1Bit"/>
+    <comp loc="(800,390)" name="Equal_1Bit"/>
+    <comp loc="(800,40)" name="Equal_1Bit"/>
+    <comp loc="(800,460)" name="Equal_1Bit"/>
+    <comp loc="(800,530)" name="Equal_1Bit"/>
     <wire from="(1000,290)" to="(1130,290)"/>
     <wire from="(180,210)" to="(200,210)"/>
     <wire from="(190,440)" to="(210,440)"/>
@@ -1301,9 +1301,9 @@
     <wire from="(940,330)" to="(950,330)"/>
     <wire from="(940,40)" to="(940,250)"/>
   </circuit>
-  <circuit name="DIFF8BIT">
+  <circuit name="Diff_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="DIFF8BIT"/>
+    <a name="circuit" val="Diff_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(1130,290)" name="Pin">
@@ -1335,14 +1335,14 @@
     <comp lib="1" loc="(1000,290)" name="OR Gate">
       <a name="inputs" val="8"/>
     </comp>
-    <comp loc="(800,110)" name="DIFF"/>
-    <comp loc="(800,180)" name="DIFF"/>
-    <comp loc="(800,250)" name="DIFF"/>
-    <comp loc="(800,320)" name="DIFF"/>
-    <comp loc="(800,390)" name="DIFF"/>
-    <comp loc="(800,40)" name="DIFF"/>
-    <comp loc="(800,460)" name="DIFF"/>
-    <comp loc="(800,530)" name="DIFF"/>
+    <comp loc="(800,110)" name="Diff_1Bit"/>
+    <comp loc="(800,180)" name="Diff_1Bit"/>
+    <comp loc="(800,250)" name="Diff_1Bit"/>
+    <comp loc="(800,320)" name="Diff_1Bit"/>
+    <comp loc="(800,390)" name="Diff_1Bit"/>
+    <comp loc="(800,40)" name="Diff_1Bit"/>
+    <comp loc="(800,460)" name="Diff_1Bit"/>
+    <comp loc="(800,530)" name="Diff_1Bit"/>
     <wire from="(1000,290)" to="(1130,290)"/>
     <wire from="(180,210)" to="(200,210)"/>
     <wire from="(190,440)" to="(210,440)"/>
@@ -1419,9 +1419,9 @@
     <wire from="(940,330)" to="(950,330)"/>
     <wire from="(940,40)" to="(940,250)"/>
   </circuit>
-  <circuit name="INF8BIT">
+  <circuit name="Inf_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="INF8BIT"/>
+    <a name="circuit" val="Inf_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(180,210)" name="Pin">
@@ -1453,14 +1453,14 @@
       <a name="label" val="S"/>
       <a name="output" val="true"/>
     </comp>
-    <comp loc="(800,130)" name="INF_FULL"/>
-    <comp loc="(800,230)" name="INF_FULL"/>
-    <comp loc="(800,30)" name="INF_FULL"/>
-    <comp loc="(800,330)" name="INF_FULL"/>
-    <comp loc="(800,440)" name="INF_FULL"/>
-    <comp loc="(800,550)" name="INF_FULL"/>
-    <comp loc="(800,660)" name="INF_FULL"/>
-    <comp loc="(800,780)" name="INF_FULL"/>
+    <comp loc="(800,130)" name="InfFull_1Bit"/>
+    <comp loc="(800,230)" name="InfFull_1Bit"/>
+    <comp loc="(800,30)" name="InfFull_1Bit"/>
+    <comp loc="(800,330)" name="InfFull_1Bit"/>
+    <comp loc="(800,440)" name="InfFull_1Bit"/>
+    <comp loc="(800,550)" name="InfFull_1Bit"/>
+    <comp loc="(800,660)" name="InfFull_1Bit"/>
+    <comp loc="(800,780)" name="InfFull_1Bit"/>
     <wire from="(180,210)" to="(200,210)"/>
     <wire from="(190,440)" to="(210,440)"/>
     <wire from="(220,100)" to="(370,100)"/>
@@ -1544,9 +1544,9 @@
     <wire from="(800,660)" to="(800,750)"/>
     <wire from="(800,780)" to="(870,780)"/>
   </circuit>
-  <circuit name="SUP8BIT">
+  <circuit name="Sup_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="SUP8BIT"/>
+    <a name="circuit" val="Sup_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(180,210)" name="Pin">
@@ -1578,14 +1578,14 @@
       <a name="label" val="S"/>
       <a name="output" val="true"/>
     </comp>
-    <comp loc="(800,130)" name="SUP_FULL"/>
-    <comp loc="(800,230)" name="SUP_FULL"/>
-    <comp loc="(800,30)" name="SUP_FULL"/>
-    <comp loc="(800,330)" name="SUP_FULL"/>
-    <comp loc="(800,440)" name="SUP_FULL"/>
-    <comp loc="(800,550)" name="SUP_FULL"/>
-    <comp loc="(800,660)" name="SUP_FULL"/>
-    <comp loc="(800,780)" name="SUP_FULL"/>
+    <comp loc="(800,130)" name="SupFull_1Bit"/>
+    <comp loc="(800,230)" name="SupFull_1Bit"/>
+    <comp loc="(800,30)" name="SupFull_1Bit"/>
+    <comp loc="(800,330)" name="SupFull_1Bit"/>
+    <comp loc="(800,440)" name="SupFull_1Bit"/>
+    <comp loc="(800,550)" name="SupFull_1Bit"/>
+    <comp loc="(800,660)" name="SupFull_1Bit"/>
+    <comp loc="(800,780)" name="SupFull_1Bit"/>
     <wire from="(180,210)" to="(200,210)"/>
     <wire from="(190,440)" to="(210,440)"/>
     <wire from="(220,100)" to="(370,100)"/>
@@ -1669,9 +1669,9 @@
     <wire from="(800,660)" to="(800,750)"/>
     <wire from="(800,780)" to="(870,780)"/>
   </circuit>
-  <circuit name="ET">
+  <circuit name="And_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="ET"/>
+    <a name="circuit" val="And_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(250,270)" name="Pin">
@@ -1698,9 +1698,9 @@
     <wire from="(250,310)" to="(380,310)"/>
     <wire from="(430,290)" to="(550,290)"/>
   </circuit>
-  <circuit name="OU">
+  <circuit name="Or_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="OU"/>
+    <a name="circuit" val="Or_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(270,280)" name="Pin">
@@ -1727,9 +1727,9 @@
     <wire from="(270,320)" to="(440,320)"/>
     <wire from="(490,300)" to="(610,300)"/>
   </circuit>
-  <circuit name="XOU">
+  <circuit name="Xor_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="XOU"/>
+    <a name="circuit" val="Xor_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(250,310)" name="Pin">
@@ -1760,9 +1760,9 @@
     <wire from="(450,370)" to="(520,370)"/>
     <wire from="(580,350)" to="(640,350)"/>
   </circuit>
-  <circuit name="LSL">
+  <circuit name="Lsl_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="LSL"/>
+    <a name="circuit" val="Lsl_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(340,260)" name="Pin">
@@ -1806,9 +1806,9 @@
     <wire from="(450,210)" to="(450,230)"/>
     <wire from="(450,230)" to="(500,230)"/>
   </circuit>
-  <circuit name="LSR">
+  <circuit name="Lsr_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="LSR"/>
+    <a name="circuit" val="Lsr_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(340,260)" name="Pin">
@@ -1851,9 +1851,9 @@
     <wire from="(440,230)" to="(500,230)"/>
     <wire from="(500,240)" to="(500,270)"/>
   </circuit>
-  <circuit name="ASR">
+  <circuit name="Asr_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="ASR"/>
+    <a name="circuit" val="Asr_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(340,260)" name="Pin">
@@ -1901,9 +1901,9 @@
     <wire from="(510,240)" to="(510,250)"/>
     <wire from="(510,240)" to="(530,240)"/>
   </circuit>
-  <circuit name="R_OL">
+  <circuit name="Rol_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="R_OL"/>
+    <a name="circuit" val="Rol_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(340,260)" name="Pin">
@@ -1944,9 +1944,9 @@
     <wire from="(360,240)" to="(500,240)"/>
     <wire from="(360,250)" to="(360,290)"/>
   </circuit>
-  <circuit name="R_OR">
+  <circuit name="Ror_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="R_OR"/>
+    <a name="circuit" val="Ror_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(340,260)" name="Pin">
@@ -1990,9 +1990,9 @@
     <wire from="(440,230)" to="(500,230)"/>
     <wire from="(500,240)" to="(500,290)"/>
   </circuit>
-  <circuit name="add1bit">
+  <circuit name="Add_1Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="add1bit"/>
+    <a name="circuit" val="Add_1Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(140,90)" name="Pin">
@@ -2053,9 +2053,9 @@
     <wire from="(340,140)" to="(390,140)"/>
     <wire from="(380,250)" to="(390,250)"/>
   </circuit>
-  <circuit name="ADD">
+  <circuit name="Add_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="ADD"/>
+    <a name="circuit" val="Add_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(200,270)" name="Pin">
@@ -2100,14 +2100,14 @@
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp loc="(680,200)" name="add1bit"/>
-    <comp loc="(680,300)" name="add1bit"/>
-    <comp loc="(680,400)" name="add1bit"/>
-    <comp loc="(680,500)" name="add1bit"/>
-    <comp loc="(680,600)" name="add1bit"/>
-    <comp loc="(680,700)" name="add1bit"/>
-    <comp loc="(680,800)" name="add1bit"/>
-    <comp loc="(680,900)" name="add1bit"/>
+    <comp loc="(680,200)" name="Add_1Bit"/>
+    <comp loc="(680,300)" name="Add_1Bit"/>
+    <comp loc="(680,400)" name="Add_1Bit"/>
+    <comp loc="(680,500)" name="Add_1Bit"/>
+    <comp loc="(680,600)" name="Add_1Bit"/>
+    <comp loc="(680,700)" name="Add_1Bit"/>
+    <comp loc="(680,800)" name="Add_1Bit"/>
+    <comp loc="(680,900)" name="Add_1Bit"/>
     <wire from="(200,270)" to="(210,270)"/>
     <wire from="(210,270)" to="(210,280)"/>
     <wire from="(230,240)" to="(460,240)"/>
@@ -2201,9 +2201,9 @@
     <wire from="(750,270)" to="(750,900)"/>
     <wire from="(750,270)" to="(890,270)"/>
   </circuit>
-  <circuit name="CC2">
+  <circuit name="CC2_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="CC2"/>
+    <a name="circuit" val="CC2_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(350,140)" name="Pin">
@@ -2235,8 +2235,8 @@
     <comp lib="1" loc="(420,140)" name="NOT Gate">
       <a name="width" val="8"/>
     </comp>
-    <comp loc="(660,140)" name="ADD"/>
-    <comp loc="(680,290)" name="EQUAL8BIT"/>
+    <comp loc="(660,140)" name="Add_8Bit"/>
+    <comp loc="(680,290)" name="Equal_8Bit"/>
     <wire from="(350,140)" to="(370,140)"/>
     <wire from="(370,140)" to="(370,290)"/>
     <wire from="(370,140)" to="(390,140)"/>
@@ -2249,9 +2249,9 @@
     <wire from="(660,160)" to="(710,160)"/>
     <wire from="(680,290)" to="(850,290)"/>
   </circuit>
-  <circuit name="SUB">
+  <circuit name="Sub8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="SUB"/>
+    <a name="circuit" val="Sub8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(210,190)" name="Pin">
@@ -2280,8 +2280,8 @@
     <comp lib="1" loc="(880,240)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp loc="(440,240)" name="CC2"/>
-    <comp loc="(750,190)" name="ADD"/>
+    <comp loc="(440,240)" name="CC2_8Bit"/>
+    <comp loc="(750,190)" name="Add_8Bit"/>
     <wire from="(210,190)" to="(530,190)"/>
     <wire from="(210,240)" to="(220,240)"/>
     <wire from="(440,240)" to="(480,240)"/>
