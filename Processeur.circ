@@ -779,7 +779,6 @@
     <wire from="(780,330)" to="(840,330)"/>
     <wire from="(780,360)" to="(780,490)"/>
     <wire from="(780,360)" to="(840,360)"/>
-    <wire from="(840,360)" to="(840,370)"/>
     <wire from="(860,370)" to="(860,600)"/>
     <wire from="(880,350)" to="(990,350)"/>
     <wire from="(970,360)" to="(970,370)"/>
@@ -827,7 +826,7 @@
       <a name="width" val="8"/>
     </comp>
     <comp loc="(650,360)" name="Add_8Bit"/>
-    <comp loc="(650,490)" name="Sub8Bit"/>
+    <comp loc="(650,490)" name="Sub_8Bit"/>
     <wire from="(150,360)" to="(150,490)"/>
     <wire from="(150,360)" to="(430,360)"/>
     <wire from="(150,490)" to="(150,570)"/>
@@ -981,6 +980,9 @@
     </comp>
     <comp lib="1" loc="(330,120)" name="OR Gate"/>
     <comp lib="1" loc="(400,120)" name="NOT Gate"/>
+    <wire from="(100,180)" to="(140,180)"/>
+    <wire from="(100,70)" to="(100,180)"/>
+    <wire from="(100,70)" to="(200,70)"/>
     <wire from="(110,160)" to="(140,160)"/>
     <wire from="(110,50)" to="(110,160)"/>
     <wire from="(110,50)" to="(200,50)"/>
@@ -994,14 +996,12 @@
     <wire from="(250,60)" to="(250,100)"/>
     <wire from="(330,120)" to="(370,120)"/>
     <wire from="(400,120)" to="(440,120)"/>
-    <wire from="(90,180)" to="(140,180)"/>
+    <wire from="(90,180)" to="(100,180)"/>
     <wire from="(90,50)" to="(110,50)"/>
-    <wire from="(90,70)" to="(200,70)"/>
-    <wire from="(90,70)" to="(90,180)"/>
   </circuit>
-  <circuit name="Inf1Bit">
+  <circuit name="Inf_1Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Inf1Bit"/>
+    <a name="circuit" val="Inf_1Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(330,70)" name="Pin">
@@ -1469,7 +1469,6 @@
     <wire from="(220,160)" to="(320,160)"/>
     <wire from="(220,180)" to="(300,180)"/>
     <wire from="(220,200)" to="(280,200)"/>
-    <wire from="(220,290)" to="(230,290)"/>
     <wire from="(220,60)" to="(260,60)"/>
     <wire from="(220,80)" to="(380,80)"/>
     <wire from="(230,290)" to="(270,290)"/>
@@ -1594,7 +1593,6 @@
     <wire from="(220,160)" to="(320,160)"/>
     <wire from="(220,180)" to="(300,180)"/>
     <wire from="(220,200)" to="(280,200)"/>
-    <wire from="(220,290)" to="(230,290)"/>
     <wire from="(220,60)" to="(260,60)"/>
     <wire from="(220,80)" to="(380,80)"/>
     <wire from="(230,290)" to="(270,290)"/>
@@ -2249,9 +2247,9 @@
     <wire from="(660,160)" to="(710,160)"/>
     <wire from="(680,290)" to="(850,290)"/>
   </circuit>
-  <circuit name="Sub8Bit">
+  <circuit name="Sub_8Bit">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Sub8Bit"/>
+    <a name="circuit" val="Sub_8Bit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(210,190)" name="Pin">
