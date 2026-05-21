@@ -69,6 +69,11 @@
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="0" loc="(150,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="C"/>
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="0" loc="(160,180)" name="Clock">
       <a name="facing" val="south"/>
     </comp>
@@ -109,9 +114,9 @@
     </comp>
     <comp loc="(400,280)" name="BancRegistre"/>
     <comp loc="(950,290)" name="ALU"/>
+    <wire from="(150,300)" to="(180,300)"/>
     <wire from="(160,180)" to="(160,280)"/>
     <wire from="(160,280)" to="(180,280)"/>
-    <wire from="(160,300)" to="(180,300)"/>
     <wire from="(160,320)" to="(180,320)"/>
     <wire from="(160,340)" to="(180,340)"/>
     <wire from="(390,470)" to="(410,470)"/>
