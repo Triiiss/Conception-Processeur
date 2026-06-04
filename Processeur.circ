@@ -280,7 +280,6 @@
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(1110,1080)" name="Hex Digit Display">
-      <a name="label" val="Registre_8"/>
       <a name="labelloc" val="north"/>
       <a name="labelvisible" val="true"/>
     </comp>
@@ -288,7 +287,6 @@
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(1170,150)" name="Hex Digit Display">
-      <a name="label" val="ALUOut"/>
       <a name="labelloc" val="north"/>
       <a name="labelvisible" val="true"/>
     </comp>
@@ -296,21 +294,18 @@
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(1260,770)" name="Hex Digit Display">
-      <a name="label" val="A"/>
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(1320,770)" name="Hex Digit Display">
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(1410,760)" name="Hex Digit Display">
-      <a name="label" val="B"/>
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(1470,760)" name="Hex Digit Display">
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(210,1080)" name="Hex Digit Display">
-      <a name="label" val="Registre_2"/>
       <a name="labelloc" val="north"/>
       <a name="labelvisible" val="true"/>
     </comp>
@@ -318,7 +313,6 @@
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(370,1080)" name="Hex Digit Display">
-      <a name="label" val="Registre_3"/>
       <a name="labelloc" val="north"/>
       <a name="labelvisible" val="true"/>
     </comp>
@@ -326,35 +320,31 @@
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(50,1080)" name="Hex Digit Display">
-      <a name="label" val="Registre_1"/>
       <a name="labelloc" val="north"/>
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(530,1080)" name="Hex Digit Display">
-      <a name="label" val="Registre_4"/>
       <a name="labelloc" val="north"/>
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(590,1080)" name="Hex Digit Display">
       <a name="labelvisible" val="true"/>
     </comp>
-    <comp lib="5" loc="(610,570)" name="Hex Digit Display">
+    <comp lib="5" loc="(610,590)" name="Hex Digit Display">
       <a name="labelvisible" val="true"/>
     </comp>
-    <comp lib="5" loc="(670,570)" name="Hex Digit Display">
+    <comp lib="5" loc="(670,590)" name="Hex Digit Display">
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(690,1080)" name="Hex Digit Display">
-      <a name="label" val="Registre_5"/>
       <a name="labelloc" val="north"/>
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(730,150)" name="Hex Digit Display">
-      <a name="label" val="RegIn"/>
       <a name="labelloc" val="north"/>
       <a name="labelvisible" val="true"/>
     </comp>
-    <comp lib="5" loc="(730,570)" name="Hex Digit Display">
+    <comp lib="5" loc="(730,590)" name="Hex Digit Display">
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(750,1080)" name="Hex Digit Display">
@@ -368,37 +358,78 @@
       <a name="labelloc" val="north"/>
       <a name="labelvisible" val="true"/>
     </comp>
-    <comp lib="5" loc="(790,570)" name="Hex Digit Display">
+    <comp lib="5" loc="(790,590)" name="Hex Digit Display">
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(830,440)" name="Hex Digit Display">
-      <a name="label" val="Inc_Instruction"/>
       <a name="labelloc" val="north"/>
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(850,1080)" name="Hex Digit Display">
-      <a name="label" val="Registre_6"/>
       <a name="labelloc" val="north"/>
       <a name="labelvisible" val="true"/>
     </comp>
-    <comp lib="5" loc="(850,570)" name="Hex Digit Display">
+    <comp lib="5" loc="(850,590)" name="Hex Digit Display">
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(910,1080)" name="Hex Digit Display">
       <a name="labelvisible" val="true"/>
     </comp>
-    <comp lib="5" loc="(910,570)" name="Hex Digit Display">
+    <comp lib="5" loc="(910,590)" name="Hex Digit Display">
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(970,150)" name="Hex Digit Display">
-      <a name="label" val="RegOut"/>
       <a name="labelloc" val="north"/>
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="5" loc="(980,1080)" name="Hex Digit Display">
-      <a name="label" val="Registre_7"/>
       <a name="labelloc" val="north"/>
       <a name="labelvisible" val="true"/>
+    </comp>
+    <comp lib="8" loc="(1006,80)" name="Text">
+      <a name="text" val="Reg Out"/>
+    </comp>
+    <comp lib="8" loc="(1013,1011)" name="Text">
+      <a name="text" val="Registre 7"/>
+    </comp>
+    <comp lib="8" loc="(1172,1002)" name="Text">
+      <a name="text" val="Registre 8 (RCMP)"/>
+    </comp>
+    <comp lib="8" loc="(1207,79)" name="Text">
+      <a name="text" val="ALU Out"/>
+    </comp>
+    <comp lib="8" loc="(1296,695)" name="Text">
+      <a name="text" val="Entrée A"/>
+    </comp>
+    <comp lib="8" loc="(1444,688)" name="Text">
+      <a name="text" val="Entrée B"/>
+    </comp>
+    <comp lib="8" loc="(245,1010)" name="Text">
+      <a name="text" val="Registre 2"/>
+    </comp>
+    <comp lib="8" loc="(402,1011)" name="Text">
+      <a name="text" val="Registre 3"/>
+    </comp>
+    <comp lib="8" loc="(564,1010)" name="Text">
+      <a name="text" val="Registre 4"/>
+    </comp>
+    <comp lib="8" loc="(725,1012)" name="Text">
+      <a name="text" val="Registre 5"/>
+    </comp>
+    <comp lib="8" loc="(752,520)" name="Text">
+      <a name="text" val="Instruction FETCH"/>
+    </comp>
+    <comp lib="8" loc="(767,80)" name="Text">
+      <a name="text" val="Reg In"/>
+    </comp>
+    <comp lib="8" loc="(86,1011)" name="Text">
+      <a name="text" val="Registre 1"/>
+    </comp>
+    <comp lib="8" loc="(884,1012)" name="Text">
+      <a name="text" val="Registre 6"/>
+    </comp>
+    <comp lib="8" loc="(893,369)" name="Text">
+      <a name="text" val="Incrémentation Instructions"/>
     </comp>
     <comp loc="(1440,300)" name="Reg_ALU"/>
     <comp loc="(380,500)" name="STOR_UNIT"/>
@@ -455,8 +486,8 @@
     <wire from="(1320,770)" to="(1320,820)"/>
     <wire from="(1320,820)" to="(1330,820)"/>
     <wire from="(1350,840)" to="(1370,840)"/>
-    <wire from="(1370,680)" to="(1370,840)"/>
-    <wire from="(1370,680)" to="(1480,680)"/>
+    <wire from="(1370,620)" to="(1370,840)"/>
+    <wire from="(1370,620)" to="(1480,620)"/>
     <wire from="(1410,760)" to="(1410,820)"/>
     <wire from="(1410,820)" to="(1460,820)"/>
     <wire from="(1440,300)" to="(1450,300)"/>
@@ -479,7 +510,7 @@
     <wire from="(1450,810)" to="(1460,810)"/>
     <wire from="(1460,220)" to="(1460,320)"/>
     <wire from="(1470,760)" to="(1470,780)"/>
-    <wire from="(1480,400)" to="(1480,680)"/>
+    <wire from="(1480,400)" to="(1480,620)"/>
     <wire from="(1480,830)" to="(1500,830)"/>
     <wire from="(1500,380)" to="(1500,830)"/>
     <wire from="(1560,360)" to="(1560,870)"/>
@@ -536,8 +567,6 @@
     <wire from="(590,1080)" to="(590,1090)"/>
     <wire from="(600,610)" to="(600,670)"/>
     <wire from="(600,670)" to="(720,670)"/>
-    <wire from="(610,570)" to="(610,590)"/>
-    <wire from="(670,570)" to="(670,590)"/>
     <wire from="(690,1080)" to="(690,1090)"/>
     <wire from="(690,1090)" to="(720,1090)"/>
     <wire from="(690,350)" to="(740,350)"/>
@@ -564,7 +593,6 @@
     <wire from="(730,150)" to="(730,160)"/>
     <wire from="(730,160)" to="(760,160)"/>
     <wire from="(730,330)" to="(730,390)"/>
-    <wire from="(730,570)" to="(730,590)"/>
     <wire from="(740,1110)" to="(740,1140)"/>
     <wire from="(740,1140)" to="(1610,1140)"/>
     <wire from="(740,320)" to="(740,350)"/>
@@ -576,18 +604,15 @@
     <wire from="(770,440)" to="(770,450)"/>
     <wire from="(770,450)" to="(800,450)"/>
     <wire from="(790,150)" to="(790,160)"/>
-    <wire from="(790,570)" to="(790,590)"/>
     <wire from="(810,450)" to="(830,450)"/>
     <wire from="(830,440)" to="(830,450)"/>
     <wire from="(850,1080)" to="(850,1090)"/>
     <wire from="(850,1090)" to="(880,1090)"/>
-    <wire from="(850,570)" to="(850,590)"/>
     <wire from="(890,1090)" to="(910,1090)"/>
     <wire from="(90,1090)" to="(110,1090)"/>
     <wire from="(900,1110)" to="(900,1130)"/>
     <wire from="(900,1130)" to="(1620,1130)"/>
     <wire from="(910,1080)" to="(910,1090)"/>
-    <wire from="(910,570)" to="(910,590)"/>
     <wire from="(950,640)" to="(1030,640)"/>
     <wire from="(950,660)" to="(1040,660)"/>
     <wire from="(950,680)" to="(1050,680)"/>
